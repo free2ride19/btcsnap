@@ -1,18 +1,23 @@
 export enum BitcoinNetwork {
-  Main = "mainnet",
-  Test = "testnet",
+  Main = 'mainnet',
+  Test = 'testnet',
 }
 
 export enum BitcoinScriptType {
-  P2PKH = "P2PKH",
-  P2SH_P2WPKH = "P2SH-P2WPKH",
-  P2WPKH = "P2WPKH",
+  P2PKH = 'P2PKH',
+  P2SH_P2WPKH = 'P2SH-P2WPKH',
+  P2WPKH = 'P2WPKH',
+}
+
+export enum LightningUnit {
+  Sats = 'Sats',
+  Currency = 'Currency',
 }
 
 export enum BitcoinUnit {
   BTC = 'BTC',
   Sats = 'Sats',
-  Currency = 'Currency'
+  Currency = 'Currency',
 }
 
 export type Utxo = {
@@ -33,5 +38,5 @@ export type Address = {
 
 export enum WalletType {
   BitcoinWallet = 'bitcoinWallet',
-  LightningWallet = 'lightningWallet'
+  LightningWallet = 'lightningWallet',
 }
